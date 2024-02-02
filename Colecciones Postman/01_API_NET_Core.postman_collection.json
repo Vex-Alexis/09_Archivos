@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "c8ac61fd-72f4-435b-89be-c2a1f7d334f9",
+		"name": "01_API_NET_Core",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30194202"
+	},
+	"item": [
+		{
+			"name": "Guardar Candidato",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"tipo_Documento\": \"string\",\r\n  \"num_Documento_Estudiante\": \"string\",\r\n  \"cedula_Ciudadania\": \"string\",\r\n  \"observacion_Cedula_Ciudadania\": \"string\",\r\n  \"diploma_Bachiller\": \"string\",\r\n  \"observaciones_Diploma_Bachiller\": \"string\",\r\n  \"acta_Bachiller\": \"string\",\r\n  \"observaciones_Acta_Bachiller\": \"string\",\r\n  \"examen_Icfes_11\": \"string\",\r\n  \"observaciones_Examen_Icfes_11\": \"string\",\r\n  \"diploma_Tecnico\": \"string\",\r\n  \"observaciones_Diploma_Tecnico\": \"string\",\r\n  \"acta_Tecnico\": \"string\",\r\n  \"observaciones_Acta_Tecnico\": \"string\",\r\n  \"resultado_TyT_Tecnico\": \"string\",\r\n  \"observaciones_Resultado_TyT_Tecnico\": \"string\",\r\n  \"observaciones_Diploma_Tecnologo\": \"string\",\r\n  \"acta_Tecnologo\": \"string\",\r\n  \"observaciones_Acta_Tecnologo\": \"string\",\r\n  \"resultado_TyT_Tecnologo\": \"string\",\r\n  \"observaciones_Resultado_TyT_Tecnologo\": \"string\",\r\n  \"diploma_Profesional\": \"string\",\r\n  \"observaciones_Diploma_Profesional\": \"string\",\r\n  \"acta_Profesional\": \"string\",\r\n  \"observaciones_Acta_Profesional\": \"string\",\r\n  \"resultado_Saber_Pro\": \"string\",\r\n  \"observaciones_Resultado_Saber_Pro\": \"string\",\r\n  \"estado_Final_estudiante\": \"string\",\r\n  \"fecha_Revision_Bot\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7092/response/GuardarRespuestaBot",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"response",
+						"GuardarRespuestaBot"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Todos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7092/response/GuardarRespuestaBot/candidatos",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"response",
+						"GuardarRespuestaBot",
+						"candidatos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Uno",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7092/response/GuardarRespuestaBot/1",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7092",
+					"path": [
+						"response",
+						"GuardarRespuestaBot",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

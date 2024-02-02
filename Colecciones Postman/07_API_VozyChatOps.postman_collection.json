@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "fd796a33-d104-4ef3-bad4-1eae6ec4bd76",
+		"name": "07_API_VozyChatOps",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30194202"
+	},
+	"item": [
+		{
+			"name": "Consultar horario x NUM_IDENTIFICACION",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7000/api/schedule/query/1045702044",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"schedule",
+						"query",
+						"1045702044"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PDFBase64",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NUM_IDENTIFICACION\" : \"1033694145\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7000/api/schedule/generate-pdf",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7000",
+					"path": [
+						"api",
+						"schedule",
+						"generate-pdf"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEV_Obtener horario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://apivozychat.cunapp.dev/api/schedule/query/1045702044",
+					"protocol": "https",
+					"host": [
+						"apivozychat",
+						"cunapp",
+						"dev"
+					],
+					"path": [
+						"api",
+						"schedule",
+						"query",
+						"1045702044"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DEV_Obtener PDF base64",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"NUM_IDENTIFICACION\" : \"1045702044\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://apivozychat.cunapp.dev/api/schedule/generate-pdf",
+					"protocol": "https",
+					"host": [
+						"apivozychat",
+						"cunapp",
+						"dev"
+					],
+					"path": [
+						"api",
+						"schedule",
+						"generate-pdf"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

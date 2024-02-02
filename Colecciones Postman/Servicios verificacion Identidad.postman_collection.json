@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "a1ea34b3-3230-42c2-9c9d-4a2f229ab25b",
+		"name": "Servicios verificacion Identidad",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30194202"
+	},
+	"item": [
+		{
+			"name": "Lector de documento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "documento",
+							"type": "file",
+							"src": "/C:/Users/CUNAD/Downloads/3._cedula_mafe (1).pdf",
+							"disabled": true
+						},
+						{
+							"key": "documento",
+							"type": "file",
+							"src": [
+								"/C:/Users/CUN/Downloads/1000063582 C.pdf",
+								"/C:/Users/CUN/Downloads/1000117878 C.pdf"
+							]
+						}
+					]
+				},
+				"url": {
+					"raw": "https://legantocc.cunapp.pro/api/Lector/LeerDocumento/",
+					"protocol": "https",
+					"host": [
+						"legantocc",
+						"cunapp",
+						"pro"
+					],
+					"path": [
+						"api",
+						"Lector",
+						"LeerDocumento",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

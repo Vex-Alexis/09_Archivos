@@ -1,0 +1,31 @@
+{
+	"info": {
+		"_postman_id": "765b3570-e860-4965-a65c-f27b8b3398aa",
+		"name": "05_MS_Pichincha",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30194202"
+	},
+	"item": [
+		{
+			"name": "Accounts_Lista",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/api/v1/bankAccount",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"api",
+						"v1",
+						"bankAccount"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "2e85bf7d-9bca-4e94-91e4-6f019bb224db",
+		"name": "04_API_Library-Management",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30194202"
+	},
+	"item": [
+		{
+			"name": "List_Books",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7040/api/book",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7040",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save_Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\" : \"Libro para eliminar\",\r\n    \"Author\" : \"Autor\",\r\n    \"Genre\" : \"Genero\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7040/api/book",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7040",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update_Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 4,\r\n    \"title\": \"Libro #4 Updated\",\r\n    \"author\": \"Autor Updated\",\r\n    \"genre\": \"Genero Updated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7040/api/book",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7040",
+					"path": [
+						"api",
+						"book"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_Book",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7040/api/book/4",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7040",
+					"path": [
+						"api",
+						"book",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\" : \"alexis@mail.com\",\r\n    \"password\" : \"1234567\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7040/api/Auth/login",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7040",
+					"path": [
+						"api",
+						"Auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

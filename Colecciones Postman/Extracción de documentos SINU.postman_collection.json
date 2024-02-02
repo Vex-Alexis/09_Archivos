@@ -1,0 +1,84 @@
+{
+	"info": {
+		"_postman_id": "4495f398-0366-401e-adb6-0820efc4e328",
+		"name": "Extracción de documentos SINU",
+		"description": "Este servicio provee la conexión con SINU (ACIES) para la extracción de documentos de identidad o \"requisitos\"",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30194202"
+	},
+	"item": [
+		{
+			"name": "Autenticacion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"aNc13jeRsa93fpV/VV/y0ur6GeJ+pKjD\",\r\n    \"password\": \"UzAsTj4k3EwevhQdapUwxe79gmTFsG36\",\r\n    \"companyCode\": \"C44\",\r\n    \"method\": \"Encrypt\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sigwt.cun.edu.co/sinuWSFin/services/rest/token",
+					"protocol": "https",
+					"host": [
+						"sigwt",
+						"cun",
+						"edu",
+						"co"
+					],
+					"path": [
+						"sinuWSFin",
+						"services",
+						"rest",
+						"token"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Requisitos Alumno",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "OYQ9l9ufDOpm4FtP1Mtdf8mjfSBdv55yKpU+CbnPzfpoCBPG8nAfb43GLmfWKwdQg1Gizo68u5R/2fm8tvoLuw==",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"tipoIdentificacion\":\"CC\",\r\n    \"numeroIdentificacion\":\"29951627\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://sigwt.cun.edu.co/sinuWSFin/services/rest/req_alumno/fetch",
+					"protocol": "https",
+					"host": [
+						"sigwt",
+						"cun",
+						"edu",
+						"co"
+					],
+					"path": [
+						"sinuWSFin",
+						"services",
+						"rest",
+						"req_alumno",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
